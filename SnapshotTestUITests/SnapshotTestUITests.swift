@@ -18,9 +18,13 @@ class SnapshotTestUITests: XCTestCase {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        let app = XCUIApplication()
-        setupSnapshot(app)
-        app.launch()
+        if #available(iOS 9.0, *) {
+            let app = XCUIApplication()
+            setupSnapshot(app)
+            app.launch()
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func tearDown() {
@@ -28,6 +32,7 @@ class SnapshotTestUITests: XCTestCase {
         super.tearDown()
     }
     
+    @available(iOS 9.0, *)
     func testExample() {
         XCUIApplication().childrenMatchingType(.Window).elementBoundByIndex(0).tap()
         snapshot("01LoginScreen")

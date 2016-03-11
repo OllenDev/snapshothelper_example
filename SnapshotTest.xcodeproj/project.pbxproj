@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B309CF321C920544007555FF /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309CF311C920544007555FF /* SnapshotHelper.swift */; };
 		B350429C1C907D0600E270F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350429B1C907D0600E270F9 /* AppDelegate.swift */; };
 		B350429E1C907D0600E270F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350429D1C907D0600E270F9 /* ViewController.swift */; };
 		B35042A11C907D0600E270F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B350429F1C907D0600E270F9 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B309CF311C920544007555FF /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		B35042981C907D0600E270F9 /* SnapshotTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapshotTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B350429B1C907D0600E270F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B350429D1C907D0600E270F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		B35042BA1C907D0600E270F9 /* SnapshotTestUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B309CF311C920544007555FF /* SnapshotHelper.swift */,
 				B35042BB1C907D0600E270F9 /* SnapshotTestUITests.swift */,
 				B35042BD1C907D0600E270F9 /* Info.plist */,
 			);
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B35042BC1C907D0600E270F9 /* SnapshotTestUITests.swift in Sources */,
+				B309CF321C920544007555FF /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SnapshotTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ollendev.SnapshotTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SnapshotTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ollendev.SnapshotTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +490,7 @@
 				B35042C21C907D0600E270F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B35042C31C907D0600E270F9 /* Build configuration list for PBXNativeTarget "SnapshotTestTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +499,7 @@
 				B35042C51C907D0600E270F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B35042C61C907D0600E270F9 /* Build configuration list for PBXNativeTarget "SnapshotTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +508,7 @@
 				B35042C81C907D0600E270F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
